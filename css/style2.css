@@ -33,6 +33,7 @@ nav ul li a{
     background-color: #808080;
     font-family: 'Inria Serif', serif;
     font-size: 1.3em;
+    text-decoration: none;
 }
 nav ul li{
     display:inline-flex;
@@ -197,6 +198,17 @@ footer ul{
 .qualifications h1, .myWork h1{
     color: #A3D9D3;
 }
+.navInteraction.active{
+    color:white;
+    text-decoration: underline;
+}
+
+.navInteraction.clicked{
+    color: #A3D9D3;
+}
+
+
+
 /*Responsive Design for Mobile Devices*/
 @media only screen and (max-width:600px) {
     .flexContainer{flex-direction: column;}
