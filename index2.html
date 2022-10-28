@@ -16,10 +16,10 @@
             <nav class="hide-mobile">
                 <img class="logoSize"src="images/stephen-kasahara-low-resolution-logo-white-on-transparent-background.png" alt="Error">
                 <ul>
-                    <li class="listBackground"><a class="navInteraction" href="#">About</a></li>
-                    <li class="listBackground"><a class="navInteraction" href="#">Skills</a></li>
-                    <li class="listBackground"><a class="navInteraction" href="#">Work</a></li>
-                    <li class="listBackground"><a class="navInteraction" href="#">Contact</a></li>
+                    <li class="listBackground"><a class="navInteraction" href="#about">About</a></li>
+                    <li class="listBackground"><a class="navInteraction" href="#skills">Skills</a></li>
+                    <li class="listBackground"><a class="navInteraction" href="#work">Work</a></li>
+                    <li class="listBackground"><a class="navInteraction" href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <nav class="show-mobile">
@@ -28,8 +28,7 @@
             </nav>
         </div>
     </header>
-
-    <section class="heroImg">
+    <section class="heroImg sectionFunction" id="about">
         <div class="content">
             <div class="childClass profileImage">
             <img src="images/E3F9C2CE-F303-49E1-9BC3-98BD60F760B5 Small.png" alt="Error">
@@ -56,7 +55,9 @@
         </div>
     </section>
 
-    <section class="qualifications">
+
+
+    <section class="qualifications sectionFunction" id="skills">
         <div class="myskills childClass">
             <h1>Skills</h1>
             <div class="boxedItems">         
@@ -84,41 +85,41 @@
         </div>
     </section>
 
-    <section class="myWork">
-        <h1>My Work</h1>
+
+    <section class="myWork sectionFunction" id="work">
+        <div class="workTitle">
+            <h1>My Work</h1>
+            <h4 class="viewProjects hoverText">View All Projects</h4>
+        </div>
         <div class="workGrid">
-            <div id="firstProject"><img src="images/Screen Shot 2022-10-05 at 5.07.23 PM copy.png"></div>
-            <div id="firstProjectInfo">
+            <div class="toggleProject hoverProject" id="firstProject"><img src="images/Screen Shot 2022-10-05 at 5.07.23 PM copy.png"></div>
+            <div class="hoverProject" id="firstProjectInfo">
                 <h4 class="cardInfo">Government Website Redesign</h4>
                 <p class="cardInfo">Redesigning Department of Education Website </p>
-                <button class="cardInfo projectButtons">View Project</button>
             </div>
-            <div id="secondProject"><img src="images/Screen Shot 2022-10-05 at 5.12.48 PM copy.png"></div>
-            <div id="secondProjectInfo">
+            <div class="toggleProject hoverProject" id="secondProject"><img src="images/Screen Shot 2022-10-05 at 5.12.48 PM copy.png"></div>
+            <div class="hoverProject" id="secondProjectInfo">
                 <h4 class="cardInfo">Feline Rescue Website Redesign</h4>
                 <p class="cardInfo">Redesigning Feline Rescue Website</p>
-                <button class="cardInfo projectButtons">View Project</button>
             </div>
-            <div id="thirdProject"><img src="images/Project3.jpg"></div>
-            <div id="thirdProjectInfo">
+            <div class="toggleProject hoverProject" id="thirdProject"><img src="images/Project3.jpg"></div>
+            <div class="hoverProject" id="thirdProjectInfo">
                 <h4 class="cardInfo">Final Project</h4>
                 <p class="cardInfo">This is the template for my final project</p>
-                <button class="cardInfo projectButtons">View Project</button>
             </div>
         </div>
-        <h3 class="viewProjects navInteraction">View All Projects</h3>
+
     </section>
 
-
-    <footer>
+    <footer class="sectionFunction" id="contact">
         <ul>
             <div class="socialMedia">
                 <li class="socialMediaImages"><img src="images/Vector.png"></li>
                 <li class="socialMediaImages"><img src="images/Vector-1.png"></li>
             </div>
-            <li>stephen.kasahara@gmail.com</li>
-            <li>612-865-9081</li>
-            <li>Copyright © 2022</li>
+            <li class="hoverText">stephen.kasahara@gmail.com</li>
+            <li class="hoverText">612-865-9081</li>
+            <li class="hoverText">Copyright © 2022</li>
         </ul>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
