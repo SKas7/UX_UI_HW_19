@@ -33,39 +33,45 @@ $(".hoverText").hover(function () {
   $(this).toggleClass("active");
 }
 );
-/*
+
 $(window).scroll(function () {
   $("span").css("display", "inline").fadeOut("slow");
 });
 
 let section = document.querySelectorAll('.sectionFunction');
 let lists = document.querySelectorAll('.hide-mobile ul li');
-console.log(section);
-console.log(lists);
 function activeLink(li) {
   lists.forEach((item) => item.classList.remove('active'));
   li.classList.add('active');
-  console.log("In AtiveLink");
 }
 lists.forEach((item) =>
   item.addEventListener('click', function () {
-    activeLink(this);
   }));
 
 window.onscroll = () => {
   section.forEach(sec => {
-    let top = window.scrollY;
+    let top = window.scrollY + (window.innerHeight/3);
     let offset = sec.offsetTop;
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
-    
-    console.log(id);
 
-    if (top >= offset && top < offset + height) {
+    if (id=='contact'){
+      console.log(Math.round(window.scrollY + window.innerHeight));
+      console.log(offset+height);   
+      if(Math.round(window.scrollY + window.innerHeight)==(offset+height)){
+        console.log(window.scrollY + window.innerHeight);
+        console.log(offset+height);        
+        const target = document.querySelector(`[href='#${id}']`).parentElement;
+        activeLink(target);
+        console.log(`[href='#${id}']`);
+        
+      }
+    }
+
+    else if (top >= offset && top < offset + height) {
       const target = document.querySelector(`[href='#${id}']`).parentElement;
       activeLink(target);
-      console.log(target);
+      console.log(`[href='#${id}']`);
     }
   })
 };
-*/

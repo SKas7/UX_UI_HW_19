@@ -13,7 +13,7 @@
 }
 header{
     width:100%;
-    height:71px;
+    height:70.47px;
     position: fixed;
     top: 0px;
     z-index: 9999;
@@ -227,6 +227,7 @@ footer ul{
 .navInteraction.active{
     color:white;
     text-decoration: underline;
+
 }
 
 .navInteraction.clicked{
