@@ -218,7 +218,6 @@ footer ul{
 }
 .hoverText.active{
     color: white;
-    font-weight: bolder;
     text-decoration:underline;
 }
 .qualifications h1, .myWork h1{
